@@ -138,6 +138,11 @@ body{
     display: flex;
     justify-content:stretch;
 }
+.commented-user-id,
+.commented-text{
+    margin: 0 10px 0 0;
+    
+}
 .comment-write-form{
     display: flex;
 }
