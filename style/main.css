@@ -4,7 +4,6 @@
 body{
     margin: 0;
     background: #FAFAFA;
-
 }
 .feed-page{
     display: flex;
@@ -91,10 +90,15 @@ body{
     border: 1px solid #DBDBDB;
 
 }
+.settings_icon{
+    margin-left: auto;
+
+}
 .round-image{
     border-radius: 50%;
     width: 42px;
     height: 42px;
+    margin-right: 10px;
 
 }
 .feed-header div{
@@ -114,13 +118,58 @@ body{
     padding: 16px;
     border-bottom: 1px solid #efefef;
 }
+.board-container{
+    margin: 10px 10px;
+}
+.feed-icons-container{
+    margin-bottom: 10px;
+}
+.feed-message-container{
+    margin-bottom: 10px;
+}
+.feed-message-container span:first-of-type{
+    margin-right: 10px;
+}
+.comment-line{
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 10px;
+}
+.each-comment-list{
+    display: flex;
+    justify-content:stretch;
+}
+.comment-write-form{
+    display: flex;
+}
+.comment-input{
+    display: flex;
+    flex-direction: column;
+    color: #262626;
+    border: 0;
+    outline: 0;
+    text-align: start;
+    height: 18px;
+    resize: none; 
+    /* urgent에는 auto로 주어져있음 이걸 none으로 하니 빗장무늬 사라짐. */
+    background: 0 0;
+    /* 같아짐 색깔 */
+}
+.comment-submit-button{
+    /* pointer-events: none; 나중에 처리할 것.*/
+    border: 0;
+    color: #0095F6;
+    display: inline;
+    padding: 0;
+    text-align: center;
+    background: 0 0;
+    margin-left: auto;
+    cursor: pointer;
+}
 .main-image-container{
     overflow-x: auto;
     overflow-y: hidden;
     display: block;
     flex-direction: row;
-    height: 100%;
-
 }
 .main-image{
     object-fit: cover;
@@ -142,11 +191,11 @@ body{
 
 .icons-contianer i{
     font-size: 22px;
-    margin: 10px;
+    margin: 10px 15px 10px 0px;
 }
 .icons-contianer i:last-of-type{
-    margin-left: auto;
-    
+    margin-left: auto; 
+    /* 자식을 움직일때 margin-left도 좋은 방법? */
 }
 .round-image-small{
     width: 20px;
@@ -201,5 +250,4 @@ body{
 .recomandation-individual div:last-of-type{
     margin-top: 5px;
 }
-
 
