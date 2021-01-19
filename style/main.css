@@ -136,7 +136,9 @@ body{
 }
 .each-comment-list{
     display: flex;
-    justify-content:stretch;
+    justify-content:flex-start;
+    vertical-align: middle;
+
 }
 .commented-user-id,
 .commented-text{
