@@ -4,6 +4,7 @@
 body{
     margin: 0;
     background: #FAFAFA;
+
 }
 .feed-page{
     display: flex;
@@ -23,14 +24,27 @@ body{
     order: 0;
     padding: 15px;
     border-bottom: 1px solid #DBDBDB;
+    order: 0;
 }
 .title{
     display: flex;
     justify-content: space-around;
 }
+.title div:last-of-type{
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 25px;
+
+}
 .title i,
 .title div{
     margin-right: 10px;
+    font-size: 20px
+}
+.title i,
+.title div:first-of-type {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .input{
     position: relative;
@@ -38,9 +52,18 @@ body{
 }
 .input input{
     position: relative;
+    width: 266px;
+    height: 37px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    outline: none;
 }
-.input div{
+.input div:first-of-type{
+    display: flex;
      position: absolute; 
+     color: #DBDBDB; ;
+     margin-top:10px;
+     padding-left: 120px;
 }
 
 .icons img{
@@ -52,27 +75,20 @@ body{
     display: flex;
     justify-content: flex-start;
 }
-/* main-feed */
-.main-feed{
+/* main-container */
+.main-container{
     display: flex;
-    justify-content: space-around;
-    max-width: 935px ;
-    position: relative;
-    margin-left: 70px;
-    margin-top: 70px;
-    border: 1px solid #DBDBDB;
-
+    justify-content: center;
+    width: 100%;
 }
 .feed-container{
     flex-direction: column;
-    padding-top: 0px;
     align-items: stretch;
-    border: 0 solid #000;
     display: flex;
-    flex-shrink: 0;
-    margin: 0;
-    padding: 0;
+    margin-right: 30px;
+    margin-top: 30px;
     position: relative;
+    border: 1px solid #DBDBDB;
 
 }
 .round-image{
@@ -141,32 +157,49 @@ body{
     display: flex;
     justify-content: flex-start;
 }
+.recomandation-profile div:last-of-type{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #0095F6;
+}
 .own-profile-container p{
     margin: 0;
     font-size: 15px;
     margin-left: 8px;
 }
 
+.recomandation-list div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
 
 .main-right-container {
-    position: fixed;
-    top:88px;
-    margin-bottom: 30px;
-    padding: 0;
-    max-width: 293px;
-    width: 100%;
-    right: 0px;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
-    margin:0;
+    margin-top: 40px;
 }
 .recomandation-image{
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
+.recomandation-individual{
+    display: flex;
+    justify-content: space-between;
+}
 
-
+.recomandation-individual div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 50px;
+}
+.user-follow-status{
+    font-size: 12px;
+}
+.recomandation-individual div:last-of-type{
+    margin-top: 5px;
+}
 
 
