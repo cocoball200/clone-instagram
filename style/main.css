@@ -25,23 +25,23 @@ body{
     border-bottom: 1px solid #DBDBDB;
     order: 0;
 }
-.title{
+.title_nav{
     display: flex;
     justify-content: space-around;
 }
-.title div:last-of-type{
+.title_nav div:last-of-type{
     font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 25px;
 
 }
-.title i,
-.title div{
+.title_nav i,
+.title_nav div{
     margin-right: 10px;
     font-size: 20px
 }
-.title i,
-.title div:first-of-type {
+.title_nav i,
+.title_nav div:first-of-type {
     margin-top: 10px;
     margin-left: 10px;
 }
