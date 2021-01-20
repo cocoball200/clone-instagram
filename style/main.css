@@ -1,3 +1,9 @@
+/* 
+1. display
+2. align-items
+3. width,height
+4. background
+*/
 *{
     box-sizing: border-box;
 }
@@ -8,21 +14,21 @@ body{
 .feed-page{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items:flex-start;
     background: #FAFAFA;
-    flex-grow: 1;
 }
-
 .navigation-bar-container{
     display: flex;
     justify-content: space-between;
     align-self:stretch;
-    background: #FFFFFF;
     width: 100%;
     height: 100%;
     order: 0;
     padding: 15px;
     border-bottom: 1px solid #DBDBDB;
+    background: #FFFFFF;
+
     order: 0;
 }
 .title_nav{
@@ -33,7 +39,6 @@ body{
     font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 25px;
-
 }
 .title_nav i,
 .title_nav div{
@@ -45,26 +50,45 @@ body{
     margin-top: 10px;
     margin-left: 10px;
 }
-.input{
-    position: relative;
+.input-search-container{
+    height: 28px;
+    width: 215px;
+    border: 0 solid #000;
     display: flex;
-}
-.input input{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
     position: relative;
-    width: 266px;
-    height: 37px;
-    background-color: #FAFAFA;
-    border: 1px solid #DBDBDB;
-    outline: none;
 }
-.input div:first-of-type{
+.input-search-bar{
+    position: absolute;
+    font-size: 14px;
+    background: #fafafa;
+    border: solid 1px #DBDBDB;
+    outline: 0;
+    padding: 3px 10px 3px 26px;
+    height: 100%;
+    width: 100%;
+}
+.searched-id-container{
+    display: block;
+}
+.searched-id-list{
     display: flex;
-     position: absolute; 
-     color: #DBDBDB; ;
-     margin-top:10px;
-     padding-left: 120px;
+    flex-direction: column;
 }
-
+.searched-id-list div {
+    position: relative;
+    border: solid 1px #DBDBDB;
+    height: 30px;
+    background: #fafafa;
+    z-index: 9;
+    width: 100%;
+    padding: 0;
+    border-radius: 3px;
+    bottom: -11px;
+    opacity: 0.9;
+}
 .icons img{
     width: 22px;
     height: 22px;
@@ -92,7 +116,6 @@ body{
 }
 .settings_icon{
     margin-left: auto;
-
 }
 .round-image{
     border-radius: 50%;
@@ -136,14 +159,18 @@ body{
 }
 .each-comment-list{
     display: flex;
-    justify-content:flex-start;
     vertical-align: middle;
-
 }
 .commented-user-id,
-.commented-text{
+.commented-text,
+.commented-text-remove{
+    display: inline;
     margin: 0 10px 0 0;
-    
+}
+.commented-text-remove{
+    color: #0095F6;
+    margin-left: auto;
+    font-size: 10px;
 }
 .comment-write-form{
     display: flex;
@@ -257,4 +284,3 @@ body{
 .recomandation-individual div:last-of-type{
     margin-top: 5px;
 }
-

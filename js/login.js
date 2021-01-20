@@ -8,4 +8,3 @@ const validateLogin = () => {
 }
 
 $inputContainer.addEventListener("keydown", validateLogin);
-
